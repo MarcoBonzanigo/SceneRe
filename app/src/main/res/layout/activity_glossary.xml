@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glossary_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GlossaryActivity">
+
+    <include
+        android:id="@+id/glossary_toolbar"
+        layout="@layout/sre_toolbar" />
+
+
+    <TextView
+        android:id="@+id/glossary_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/srePrimaryPastel"
+        android:background="@color/srePrimary"
+        android:text="@string/glossary_title"
+        android:layout_below="@id/glossary_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/glossary_layout_button_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/srePrimaryPastel"
+        android:layout_below="@+id/glossary_text_label"/>
+
+    <include
+        android:id="@+id/glossary_holder"
+        layout="@layout/scroll_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/glossary_layout_button_holder"/>
+
+</RelativeLayout>

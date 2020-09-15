@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startup_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StartupActivity"
+    android:background="@color/srePrimaryPastel">
+
+    <TextView
+        android:id="@+id/startup_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/srePrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/startup_title"
+        android:textColor="@color/srePrimaryPastel"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sre_logo"/>
+
+    <LinearLayout
+        android:id="@+id/startup_layout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startup_text_label"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dpi50"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <include
+            android:id="@+id/startup_text_1"
+            layout="@layout/logo_tile" />
+
+        <include
+            android:id="@+id/startup_text_2"
+            layout="@layout/logo_tile" />
+
+        <include
+            android:id="@+id/startup_text_3"
+            layout="@layout/logo_tile" />
+
+        <include
+            android:id="@+id/startup_text_4"
+            layout="@layout/logo_tile" />
+
+        <include
+            android:id="@+id/startup_text_5"
+            layout="@layout/logo_tile" />
+
+        <include
+            android:id="@+id/startup_text_6"
+            layout="@layout/logo_tile" />
+
+        <include
+            android:id="@+id/startup_text_7"
+            layout="@layout/logo_tile" />
+
+        <include
+            android:id="@+id/startup_text_8"
+            layout="@layout/logo_tile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startup_layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignTop="@+id/startup_layout_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dpi50"
+        android:background="@drawable/sre_progress_bar_background"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:id="@+id/startup_layout_progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@drawable/sre_progress_bar"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/startup_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/startup_edit_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dpi50"
+        android:padding="@dimen/dpi10"
+        android:text="@string/startup_enter_name_title"
+        android:textStyle="bold"
+        android:textColor="@color/srePrimaryDark"
+        android:background="@drawable/sre_text_view_light"
+        android:onClick="onStartupInterrupt"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/startup_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dpi50"
+        android:padding="@dimen/dpi10"
+        android:hint="@string/startup_enter_name"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:lines="1"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/srePrimaryPastel"
+        android:background="@drawable/sre_edit_text_dark"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/startup_button_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dpi10"
+        android:layout_marginBottom="@dimen/dpi50"
+        android:onClick="onNavigationButtonClicked"
+        android:text="@string/startup_confirm"
+        android:visibility="invisible"
+        android:textColor="@color/srePrimaryPastel"
+        android:background="@drawable/sre_button_dark"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

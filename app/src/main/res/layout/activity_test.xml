@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/srePrimaryLight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/center"/>
+    <View
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/srePrimaryLight"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/center"/>
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/srePrimaryLight"
+        android:padding="@dimen/dpi3"
+        android:layout_centerInParent="true"
+        android:text="Test"/>
+    <View
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/srePrimaryLight"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/center"/>
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/srePrimaryLight"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/center"/>
+
+
+
+
+</RelativeLayout>

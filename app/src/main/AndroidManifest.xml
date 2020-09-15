@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="uzh.scenere">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:fullBackupContent="true"
+        android:theme="@style/SceneReTheme"
+        android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|screenLayout"
+        android:windowSoftInputMode="adjustNothing"
+        android:screenOrientation="portrait"
+        android:largeHeap="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key"/>
+
+        <activity android:name=".activities.StartupActivity"
+            android:theme="@style/SceneReToolbarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.AnalyticsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.MainMenuActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbar Theme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.WalkthroughActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="landscape"
+            android:exported="true"/>
+
+        <activity android:name=".activities.CockpitActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ProjectsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ScenariosActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ShareActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait">
+            <intent-filter
+                android:icon="@mipmap/ic_launcher"
+                android:label="@string/app_name"
+                android:priority="1" >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <category android:name="android.intent.category.TYPED_OPENABLE" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.APP_BROWSER" />
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+                <category android:name="android.intent.category.INFO" />
+
+                <!--
+                    Intent Filter does not work for WhatsApp due to required whitelisting
+                -->
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+            </intent-filter>
+            <intent-filter
+                android:icon="@mipmap/ic_launcher"
+                android:label="@string/app_name"
+                android:priority="1" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <category android:name="android.intent.category.TYPED_OPENABLE" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.APP_BROWSER" />
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+                <category android:name="android.intent.category.INFO" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+
+                <data android:pathPattern=".*\\.sre" />
+                <data android:pathPattern=".*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.sre" />
+            </intent-filter>
+            <intent-filter
+                android:icon="@mipmap/ic_launcher"
+                android:label="@string/app_name"
+                android:priority="1" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <category android:name="android.intent.category.TYPED_OPENABLE" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.APP_BROWSER" />
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+                <category android:name="android.intent.category.INFO" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:mimeType="*/*" />
+
+                <data android:pathPattern=".*\\.sre" />
+                <data android:pathPattern=".*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.sre" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.sre" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.EditorActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.StakeholdersActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ObjectsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.AttributesActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.GlossaryActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".activities.PickerActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/SceneReToolbarTheme"
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>

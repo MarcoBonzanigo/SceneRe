@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--APPLICATION-->
+    <color name="srePrimaryDisabled">#999999</color>
+    <color name="srePrimaryDisabledText">#dddddd</color>
+    <color name="srePrimaryPastel">#B2DFDB</color>  <!-- 100 teal -->
+    <color name="srePrimaryPastelZebra">#B2DFDC</color>  <!-- 100 teal -->
+    <color name="srePrimaryLight">#4DB6AC</color>  <!-- 300 teal -->
+    <color name="srePrimary">#009688</color>  <!-- 500 teal -->
+    <color name="srePrimaryDark">#00796B</color>  <!-- 700 teal -->
+    <color name="srePrimaryDeepDark">#004d40</color>  <!-- 900 teal -->
+    <color name="srePrimaryAccent">#00bfa5</color>  <!-- 500 blue  -->
+    <color name="srePrimaryNeon">#1de9b6</color>  <!-- 300 blue  -->
+    <color name="srePrimaryWarn">@color/material_700_red</color>
+    <color name="srePrimaryAttention">@color/material_700_orange</color>
+    <color name="srePrimarySafe">@color/material_700_green</color>
+    <color name="sreTutorial">#FB8C00</color>  <!-- 600 orange  -->
+    <color name="sreSecondaryLight">#E1BEE7</color>  <!-- 100 pink  -->
+    <color name="sreSecondary">#CE93D8</color>  <!-- 200 pink  -->
+    <color name="sreSecondaryDark">#AB47BC</color>  <!-- 400 pink  -->
+    <color name="sreBlack">#000000</color>
+    <color name="sreBlack_I">#000001</color>
+    <color name="sreBlack_II">#000002</color>
+    <color name="sreBlack_III">#000003</color>
+    <color name="sreBlack_IV">#000004</color>
+    <color name="sreBlack_V">#000005</color>
+    <color name="sreBlack_VI">#000006</color>
+    <color name="sreGray">#7B7B7B</color>
+    <color name="sreOLEDBlack">#222222</color>
+    <color name="sreWhite">#FFFFFF</color>
+    <color name="sreWhiteZebra">#FFFFFE</color>
+    <color name="sreWhite_I">#FFFFFD</color>
+    <color name="sreWhite_II">#FFFFFC</color>
+    <color name="sreWhite_III">#FFFFFB</color>
+    <!--APPLICATION CONTRAST-->
+    <color name="sreContrastPrimaryDeepDark">#B2DFDB</color>  <!-- 100 teal -->
+    <color name="sreContrastPrimaryDark">#4DB6AC</color>  <!-- 300 teal -->
+    <color name="sreContrastPrimary">#009688</color>  <!-- 500 teal -->
+    <color name="sreContrastPrimaryLight">#00796B</color>  <!-- 700 teal -->
+    <color name="sreContrastPrimaryPastel">#004d40</color>  <!-- 900 teal -->
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_0">#111111</color>
+    <color name="gray_1">#333333</color>
+    <color name="gray_2">#666666</color>
+    <color name="gray_3">#999999</color>
+    <color name="gray_4">#AAAAAA</color>
+    <color name="gray_5">#DDDDDD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red_1">#330000</color>
+    <color name="red_2">#660000</color>
+    <color name="red_3">#990000</color>
+    <color name="red_4">#AA0000</color>
+    <color name="red_5">#DD0000</color>
+    <color name="red">#FF0000</color>
+    <color name="green_0">#001100</color>
+    <color name="green_1">#003300</color>
+    <color name="green_2">#006600</color>
+    <color name="green_3">#009900</color>
+    <color name="green_4">#00AA00</color>
+    <color name="green_5">#00DD00</color>
+    <color name="green">#00FF00</color>
+    <color name="blue_1">#000033</color>
+    <color name="blue_2">#000066</color>
+    <color name="blue_3">#000099</color>
+    <color name="blue_4">#0000AA</color>
+    <color name="blue_5">#0000DD</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="cyan">#00FFFF</color>
+
+    <color name="text">#FFFFFF</color>
+    <color name="foreground">#244864</color>
+    <color name="background">#122432</color>
+    <color name="grey">#202020</color>
+    <color name="darkgrey">#161616</color>
+    <color name="button">#326496</color>
+    <color name="fire">#FF0000</color>
+    <color name="orange">#FF6A00</color>
+    <color name="orangeyellow">#FFDD00</color>
+
+    <color name="transparentBlack_1">#99000000</color>
+    <color name="transparentBlack_2">#77000000</color>
+    <color name="transparentBlack_3">#55000000</color>
+    <color name="transparentBlack_4">#33000000</color>
+    <color name="transparentBlack_5">#11000000</color>
+    <color name="transparentBlack_z">#00000000</color>
+
+    <color name="gold_trans">#55FED73B</color>
+    <color name="gold_1">#FED73B</color>
+    <color name="gold_2">#FDEE73</color>
+    <color name="gold_3">#E58504</color>
+    <color name="gold_4">#DF7400</color>
+
+    <color name="list_green_d">#005C00</color>
+    <color name="list_green_b">#007000</color>
+
+    <color name="list_red_d">#5C0000</color>FF
+    <color name="list_red_b">#700000</color>
+
+    <color name="material_100_red">#F8BBD0</color>
+    <color name="material_100_violet">#E1BEE7</color>
+    <color name="material_100_blue">#C5CAE9</color>
+    <color name="material_100_turquoise">#BBDEFB</color>
+    <color name="material_100_green">#C8E6C9</color>
+    <color name="material_100_lime">#F0F4C3</color>
+    <color name="material_100_yellow">#FFF9C4</color>
+    <color name="material_100_orange">#FFCCBC</color>
+
+    <color name="material_700_red">#D32F2F</color>
+    <color name="material_700_violet">#7B1FA2</color>
+    <color name="material_700_blue">#303F9F</color>
+    <color name="material_700_turquoise">#0097A7</color>
+    <color name="material_700_green">#689F38</color>
+    <color name="material_700_lime">#AFB42B</color>
+    <color name="material_700_yellow">#FBC02D</color>
+    <color name="material_700_orange">#F57C00</color>
+
+    <color name="material_a700_red">#D50000</color>
+    <color name="material_a700_violet">#AA00FF</color>
+    <color name="material_a700_yellow">#FFD600</color>
+    <color name="material_a700_green">#00C853</color>
+
+
+</resources>

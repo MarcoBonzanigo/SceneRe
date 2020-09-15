@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/srePrimaryPastel"
+    tools:context=".activities.MainMenuActivity">
+
+    <include
+        android:id="@+id/main_menu_toolbar"
+        layout="@layout/sre_toolbar" />
+
+    <TextView
+        android:id="@+id/main_menu_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/srePrimaryPastel"
+        android:background="@color/srePrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/main_menu_title"
+        android:layout_below="@id/main_menu_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/main_menu_layout_button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:weightSum="6"
+        android:orientation="vertical"
+        android:layout_below="@id/main_menu_text_label"/>
+
+
+    <ImageView
+        android:id="@+id/main_menu_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:translationZ="-9999dp"
+        android:src="@drawable/sre_logo"/>
+</RelativeLayout>

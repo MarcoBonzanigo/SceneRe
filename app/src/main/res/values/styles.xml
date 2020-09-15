@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="SceneReToolbarTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:colorBackground">@color/srePrimaryPastel</item>
+        <item name="colorPrimary">@color/srePrimary</item>
+        <item name="colorPrimaryDark">@color/srePrimaryDark</item>
+        <item name="colorAccent">@color/srePrimaryAccent</item>
+    </style>
+
+    <style name="SceneReTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/srePrimary</item>
+        <item name="colorPrimaryDark">@color/srePrimaryDark</item>
+        <item name="colorAccent">@color/srePrimaryAccent</item>
+    </style>
+
+
+    <style name="HeaderBar">
+        <item name="android:background">@color/srePrimaryDark</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="android:textColor">@color/srePrimaryPastel</item>
+        <item name="android:colorBackground">@color/srePrimaryDark</item>
+    </style>
+
+    <style name="SreDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/transparent</item>
+    </style>
+</resources>

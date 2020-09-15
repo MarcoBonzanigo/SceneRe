@@ -1,0 +1,39 @@
+<margin_30,30,50,50>
+<ds9>
+<image_sre_logo_pdf><br>
+<s12><b>Scene-RE Analytic Export<br>
+<br>
+<br>
+<b_0,1><s10>User: <part_user><br>
+<b_0,1><s10>Date: <date><br>
+<br>
+<b_0,1>Scenario: <part_scenario><br>
+<b_0,1>Paths: <part_paths><br>
+<b_0,1>Steps: <part_steps><br>
+<b_0,1>Objects: <part_objects><br>
+<b_0,1>Resources: <part_resources><br>
+<b_0,1>Introduction: <part_intro><br>
+<b_0,1>Conclusion: <part_outro><br>
+<b_0,1>Stakeholders: <part_stakeholders><br>
+<br>
+<br>
+<s12><b>Statistics for each Stakeholder<br>
+<part_statistics><br>
+<br>
+<table_statistics_table>
+<br>
+<pb>
+<br>
+<s12><b>Comments for each Step<br>
+<part_comments><br>
+<br>
+<table_comments_table>
+<br>
+<pb>
+<br>
+<s12><b>Walkthroughs<br>
+<part_walkthroughs><br>
+<br>
+<table_walkthroughs_table>
+<br>
+<br>

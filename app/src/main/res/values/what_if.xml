@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="what_if_object_0">what_if_object_%1$d</string>
+    <string name="what_if_object_1">%1$s cannot participate during this action?</string>
+    <string name="what_if_object_2">%1$s is functioning incorrectly during this action?</string>
+    <string name="what_if_object_3">%1$s is not functioning during this action?</string>
+    <string name="what_if_object_4">%1$s is unavailable during this action?</string>
+
+    <string name="what_if_attribute_0">what_if_attribute_%1$d</string>
+    <string name="what_if_attribute_1">%1$s is not an Attribute of %2$s?</string>
+    <string name="what_if_attribute_2">%1$s is not enough to identify %2$s?</string>
+
+    <string name="what_if_stakeholder_2_0">what_if_stakeholder_2_%1$d</string>
+    <string name="what_if_stakeholder_2_1">%1$s and %2$s are the same instance of an agent?</string>
+    <string name="what_if_stakeholder_2_2">%1$s and %2$s fulfil the same roles during this action?</string>
+    <string name="what_if_stakeholder_2_3">The roles that are fulfilled by %1$s and %2$s are fulfilled by the same agent?</string>
+
+    <string name="what_if_stakeholder_1_0">what_if_stakeholder_1_%1$d</string>
+    <string name="what_if_stakeholder_1_1">%1$s is unavailable during this action?</string>
+
+    <string name="what_if_0">what_if_%1$d</string>
+    <string name="what_if_1">A different event occurs instead of this event in the scenario?</string>
+    <string name="what_if_2">An unexpected intrusion occurs into the system during this event?</string>
+    <string name="what_if_3">the end of this action is delayed?</string>
+    <string name="what_if_4">The information manipulated in this action is incorrect in some way?</string>
+    <string name="what_if_5">The information manipulated in this action is out-of-date?</string>
+    <string name="what_if_6">The information manipulated in this action is too detailed for the task?</string>
+    <string name="what_if_7">The information manipulated in this action is too general for the task?</string>
+    <string name="what_if_8">The information manipulated in this action is unreliable in some way?</string>
+    <string name="what_if_9">The information manipulated in this action represents a deliberate lie?</string>
+    <string name="what_if_10">The information manipulated is inappropriate to this task?</string>
+    <string name="what_if_11">There is insufficient information available to complete the action?</string>
+    <string name="what_if_12">This action does not complete?</string>
+    <string name="what_if_13">This action ends before it is planned to?</string>
+    <string name="what_if_14">This event and the previous one are the same event?</string>
+    <string name="what_if_15">This event and the previous one occur in the wrong order in the scenario?</string>
+    <string name="what_if_16">This event does not occur in this scenario?</string>
+    <string name="what_if_17">This event occurs earlier in time than expected in the scenario?</string>
+    <string name="what_if_18">This event occurs later in time than expected in the scenario?</string>
+    <string name="what_if_19">This event occurs less frequently than expected in the scenario?</string>
+    <string name="what_if_20">This event occurs more than once in the scenario?</string>
+    <string name="what_if_21">This event occurs more than once in this scenario?</string>
+    <string name="what_if_22">This event repeats at a later time in this scenario?</string>
+</resources>

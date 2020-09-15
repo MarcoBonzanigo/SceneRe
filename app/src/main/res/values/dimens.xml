@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--DPI-->
+    <dimen name="dpi0">0dp</dimen>
+    <dimen name="dpi1">1dp</dimen>
+    <dimen name="dpi2">2dp</dimen>
+    <dimen name="dpi2_5">2.5dp</dimen>
+    <dimen name="dpi3">3dp</dimen>
+    <dimen name="dpi3_5">3.5dp</dimen>
+    <dimen name="dpi5">5dp</dimen>
+    <dimen name="dpi10">10dp</dimen>
+    <dimen name="dpi15">15dp</dimen>
+    <dimen name="dpi20">20dp</dimen>
+    <dimen name="dpi35">35dp</dimen>
+    <dimen name="dpi50">50dp</dimen>
+    <!--SP-->
+    <dimen name="sp25">25sp</dimen>
+
+</resources>

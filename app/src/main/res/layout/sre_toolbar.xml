@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="?colorPrimary"
+    app:contentInsetRight="@dimen/dpi15"
+    app:contentInsetEnd="@dimen/dpi15"
+    tools:showIn="@layout/activity_cockpit">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/toolbar_action_left"
+            android:background="@null"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:fontFamily="@font/font_awesome_900"
+            android:onClick="onToolbarClicked"
+            android:textSize="@dimen/sp25"
+            android:textColor="@color/srePrimaryPastel"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/toolbar_action_center_left"
+            android:background="@null"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:fontFamily="@font/font_awesome_900"
+            android:onClick="onToolbarClicked"
+            android:textSize="@dimen/sp25"
+            android:textColor="@color/srePrimaryPastel"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/toolbar_action_center"
+            android:background="@null"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:gravity="center"
+            android:fontFamily="@font/font_awesome_900"
+            android:onClick="onToolbarClicked"
+            android:textSize="@dimen/sp25"
+            android:textColor="@color/srePrimaryPastel"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/toolbar_action_center_right"
+            android:background="@null"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:fontFamily="@font/font_awesome_900"
+            android:onClick="onToolbarClicked"
+            android:textSize="@dimen/sp25"
+            android:textColor="@color/srePrimaryPastel"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/toolbar_action_right"
+            android:background="@null"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:fontFamily="@font/font_awesome_900"
+            android:onClick="onToolbarClicked"
+            android:textSize="@dimen/sp25"
+            android:textColor="@color/srePrimaryPastel"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

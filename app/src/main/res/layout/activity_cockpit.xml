@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cockpit_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CockpitActivity">
+
+    <include layout="@layout/sre_toolbar"
+        android:id="@+id/cockpit_toolbar" />
+
+    <TextView
+        android:id="@+id/cockpit_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="@color/srePrimaryPastel"
+        android:background="@color/srePrimary"
+        android:text="@string/cockpit_title"
+        android:layout_below="@id/cockpit_toolbar"/>
+
+    <include layout="@layout/scroll_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cockpit_text_label"/>
+
+</RelativeLayout>

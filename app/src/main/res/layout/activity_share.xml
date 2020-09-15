@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/share_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/srePrimaryPastel"
+    tools:context=".activities.ShareActivity">
+
+    <include
+        android:id="@+id/share_toolbar"
+        layout="@layout/sre_toolbar" />
+
+    <TextView
+        android:id="@+id/share_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/share_toolbar"
+        android:background="@color/srePrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/share_title"
+        android:textColor="@color/srePrimaryPastel" />
+
+
+    <LinearLayout
+        android:id="@+id/share_layout_button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_below="@+id/share_text_label"/>
+
+    <include
+        android:id="@+id/share_holder"
+        layout="@layout/scroll_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/share_layout_button_holder"/>
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_email">&#xf0e0;</string>
+    <string name="icon_password">&#xf084;</string>
+    <string name="icon_user">&#xf2bd;</string>
+    <string name="icon_lock">&#xf023;</string>
+    <string name="icon_lock_open">&#xf3c1;</string>
+    <string name="icon_lock_open_alt">&#xf09c;</string>
+    <string name="icon_checkbox_checked">&#xf046;</string>
+    <string name="icon_comment">&#xf27a;</string>
+    <string name="icon_delete">&#xf2ed;</string>
+    <string name="icon_eye">&#xf06e;</string>
+    <string name="icon_eye_closed">&#xf070;</string>
+    <string name="icon_cogwheels">&#xf085;</string>
+    <string name="icon_scenario">&#xf008;</string>
+    <string name="icon_info">&#xf05a;</string>
+    <string name="icon_save">&#xf0c7;</string>
+    <string name="icon_resource">&#xf51e;</string>
+    <string name="icon_back">&#xf053;</string>
+    <string name="icon_up">&#xf106;</string>
+    <string name="icon_layer">&#xf5fd;</string>
+    <string name="icon_path">&#xf4d7;</string>
+    <string name="icon_tools">&#xf7d9;</string>
+    <string name="icon_star">&#xf005;</string>
+    <string name="icon_edit">&#xf044;</string>
+    <string name="icon_sign">&#xf56b;</string>
+    <string name="icon_check">&#xf00c;</string>
+    <string name="icon_cross">&#xf00d;</string>
+    <string name="icon_menu">&#xf03a;</string>
+    <string name="icon_backward">&#xf04a;</string>
+    <string name="icon_forward">&#xf04e;</string>
+    <string name="icon_win_min">&#xf068;</string>
+    <string name="icon_win_norm">&#xf52c;</string>
+    <string name="icon_win_max">&#xf0c9;</string>
+    <string name="icon_stakeholder">&#xf1ae;</string>
+    <string name="icon_user_alt">&#xf007;</string>
+    <string name="icon_project">&#xf573;</string>
+    <string name="icon_object">&#xf1b2;</string>
+    <string name="icon_clipboard">&#xf46d;</string>
+    <string name="icon_archive">&#xf1c6;</string>
+    <string name="icon_export">&#xf56e;</string>
+    <string name="icon_import">&#xf56f;</string>
+    <string name="icon_attributes">&#xf1b3;</string>
+    <string name="icon_glossary_entry">&#xf518;</string>
+    <string name="icon_play">&#xf04b;</string>
+    <string name="icon_path_editor">&#xf542;</string>
+    <string name="icon_walkthrough">&#xf008;</string>
+    <string name="icon_step">&#xf54b;</string>
+    <string name="icon_chart_bar">&#xf080;</string>
+    <string name="icon_chart_line">&#xf201;</string>
+    <string name="icon_file_archive">&#xf1c6;</string>
+    <string name="icon_file">&#xf15c;</string>
+    <string name="icon_trigger">&#xf2f5;</string>
+    <string name="icon_what_if">&#xf128;</string>
+    <string name="icon_input">&#xf304;</string>
+    <string name="icon_folder_minus">&#xf65d;</string>
+    <string name="icon_folder_plus">&#xf65e;</string>
+    <string name="icon_arrow_left">&#xf060;</string>
+    <string name="icon_arrow_right">&#xf061;</string>
+    <string name="icon_glossary">&#xf02d;</string>
+    <string name="icon_share">&#xf1e0;</string>
+    <string name="icon_analytics">&#xf002;</string>
+    <string name="icon_nfc">&#xf09e;</string>
+    <string name="icon_csv">&#xf6dd;</string>
+    <string name="icon_pdf">&#xf1c1;</string>
+    <string name="icon_copy">&#xf0c5;</string>
+
+    <string name="connect_left"><annotation font="font_awesome">&#xf060;</annotation> </string>
+    <string name="connect_right"> <annotation font="font_awesome">&#xf061;</annotation></string>
+
+
+    <string name="projects_icon_label"><annotation font="font_awesome">&#xf573;</annotation> Projects <annotation font="font_awesome">&#xf573;</annotation></string>
+    <string name="walkthroughs_icon_label"><annotation font="font_awesome">&#xf008;</annotation> Walkthrough <annotation font="font_awesome">&#xf008;</annotation></string>
+    <string name="analytics_icon_label"><annotation font="font_awesome">&#xf002;</annotation> Analytics <annotation font="font_awesome">&#xf002;</annotation></string>
+    <string name="share_icon_label"><annotation font="font_awesome">&#xf1e0;</annotation> Share <annotation font="font_awesome">&#xf1e0;</annotation></string>
+    <string name="cockpit_icon_label"><annotation font="font_awesome">&#xf085;</annotation> Cockpit <annotation font="font_awesome">&#xf085;</annotation></string>
+    <string name="glossary_icon_label"><annotation font="font_awesome">&#xf02d;</annotation> Glossary <annotation font="font_awesome">&#xf02d;</annotation></string>
+
+    <string name="icon_explain_cockpit">
+        <annotation font="font_awesome">&#xf04a;</annotation> Previous Section,
+        <annotation font="font_awesome">&#xf04e;</annotation> Next Section\n
+        <annotation font="font_awesome">&#xf068;</annotation>/
+        <annotation font="font_awesome">&#xf52c;</annotation>/
+        <annotation font="font_awesome">&#xf0c9;</annotation> Hide, Minimize, Maximize Info-Bar</string>
+    <string name="icon_explain_projects">
+        <annotation font="font_awesome">&#xf2ed;</annotation> Delete,
+        <annotation font="font_awesome">&#xf1ae;</annotation> Stakeholders,
+        <annotation font="font_awesome">&#xf008;</annotation> Scenarios,
+        <annotation font="font_awesome">&#xf044;</annotation> Create/Change,
+        <annotation font="font_awesome">&#xf023;/&#xf3c1;</annotation> Lock/Unlock Deletion</string>
+    <string name="icon_explain_stakeholders">
+        <annotation font="font_awesome">&#xf2ed;</annotation> Delete,
+        <annotation font="font_awesome">&#xf044;</annotation> Create/Edit,
+        <annotation font="font_awesome">&#xf023;/&#xf3c1;</annotation> Lock/Unlock Deletion</string>
+    <string name="icon_explain_scenarios">
+        <annotation font="font_awesome">&#xf2ed;</annotation> Delete,
+        <annotation font="font_awesome">&#xf044;</annotation> Create/Edit,
+        <annotation font="font_awesome">&#xf1b2;</annotation> Objects,
+        <annotation font="font_awesome">&#xf542;</annotation> Path-Editor,
+        <annotation font="font_awesome">&#xf0c5;</annotation> Copy-Mode,
+        <annotation font="font_awesome">&#xf023;/&#xf3c1;</annotation> Lock/Unlock Deletion</string>
+    <string name="icon_explain_objects">
+        <annotation font="font_awesome">&#xf2ed;</annotation> Delete,
+        <annotation font="font_awesome">&#xf044;</annotation> Create/Edit,
+        <annotation font="font_awesome">&#xf1b3;</annotation> Attributes,
+        <annotation font="font_awesome">&#xf023;/&#xf3c1;</annotation> Lock/Unlock Deletion</string>
+    <string name="icon_explain_attributes">
+        <annotation font="font_awesome">&#xf2ed;</annotation> Delete,
+        <annotation font="font_awesome">&#xf044;</annotation> Create/Edit,
+        <annotation font="font_awesome">&#xf023;/&#xf3c1;</annotation> Lock/Unlock Deletion</string>
+    <string name="icon_explain_editor">
+        <annotation font="font_awesome">&#xf04a;</annotation>/
+        <annotation font="font_awesome">&#xf04e;</annotation> Prev/Next Stakeholder,
+        <annotation font="font_awesome">&#xf067;</annotation> Add Step/Trigger,
+        <annotation font="font_awesome">&#xf044;</annotation> Edit,
+        <annotation font="font_awesome">&#xf2ed;</annotation> Delete,
+        <annotation font="font_awesome">&#xf128;</annotation> What-If</string>
+    <string name="icon_explain_walkthrough">
+        <annotation font="font_awesome">&#xf04a;</annotation>/
+        <annotation font="font_awesome">&#xf04e;</annotation> Previous / Next,
+        <annotation font="font_awesome">&#xf00c;</annotation> Select,
+        <annotation font="font_awesome">&#xf2ea;</annotation> Back,
+        <annotation font="font_awesome">&#xf04b;</annotation> Play</string>
+    <string name="icon_explain_analytics">
+        <annotation font="font_awesome">&#xf04a;</annotation>/
+        <annotation font="font_awesome">&#xf04e;</annotation> Previous / Next,
+        <annotation font="font_awesome">&#xf00c;</annotation> Select,
+        <annotation font="font_awesome">&#xf2ea;</annotation> Back,
+        <annotation font="font_awesome">&#xf008;</annotation> Walkthrough,
+        <annotation font="font_awesome">&#xf080;</annotation> Statistics,
+        <annotation font="font_awesome">&#xf304;</annotation> Comments</string>
+
+    <string name="icon_dice_one">&#xf525;</string>
+    <string name="icon_dice_two">&#xf528;</string>
+    <string name="icon_dice_three">&#xf527;</string>
+    <string name="icon_dice_four">&#xf524;</string>
+    <string name="icon_dice_five">&#xf523;</string>
+    <string name="icon_dice_six">&#xf526;</string>
+
+
+    <string name="icon_null"> </string>
+    <string name="icon_plus">&#xf067;</string>
+    <string name="icon_minus">&#xf068;</string>
+
+    <!--<string title="icon_storage">&#xf;</string>-->
+    <string name="icon_wifi">&#xf1eb;</string>
+    <string name="icon_mobile">&#xf012;</string>
+    <string name="icon_map">&#xf5a0;</string>
+    <string name="icon_marker">&#xf3c5;</string>
+    <string name="icon_pin">&#xf276;</string>
+    <string name="icon_bluetooth">&#xf293;</string>
+    <string name="icon_phone">&#xf095;</string>
+    <string name="icon_qr">&#xf029;</string>
+    <string name="icon_sim">&#xf7c4;</string>
+    <string name="icon_tags">&#xf02c;</string>
+    <string name="icon_toggle_off">&#xf204;</string>
+    <string name="icon_toggle_on">&#xf205;</string>
+    <string name="icon_vol_down">&#xf027;</string>
+    <string name="icon_vol_up">&#xf028;</string>
+    <string name="icon_vol_off">&#xf6a9;</string>
+    <string name="icon_undo">&#xf2ea;</string>
+    <string name="icon_chip">&#xf2db;</string>
+
+    <string name="icon_sms">&#xf199;</string>
+    <string name="icon_image">&#xf03e;</string>
+</resources>

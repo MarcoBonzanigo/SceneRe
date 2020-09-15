@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/projects_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProjectsActivity">
+
+    <include layout="@layout/sre_toolbar"
+        android:id="@+id/projects_toolbar" />
+
+    <TextView
+        android:id="@+id/projects_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="@color/srePrimaryPastel"
+        android:background="@color/srePrimary"
+        android:text="@string/projects_title"
+        android:layout_below="@id/projects_toolbar"/>
+
+    <include layout="@layout/scroll_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/projects_text_label"/>
+
+    <Button
+        android:id="@+id/projects_button_scenario_management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClicked"
+        android:visibility="gone"
+        android:text=""
+        tools:ignore="OnClick" />
+</RelativeLayout>

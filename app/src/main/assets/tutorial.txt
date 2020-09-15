@@ -1,0 +1,342 @@
+Welcome
+
+Before you can start,
+you need to grant the App
+some Permissions.
+Head to the Cockpit to do so.
+
+
+Scene-RE Mode
+
+Scene-RE is currently in
+User-Mode. To switch into
+Administrator-Mode, you
+need to enable it in the
+"Administator Functions"-
+Tab found in the Cockpit.
+
+
+In this Mode, you can
+conduct Walkthroughs. If
+you want to create
+
+
+Creation Button
+
+Swipe right to open
+the Input Panel.
+Enter the required Information
+to create a new Entity.
+
+
+Top & Bottom Bar
+
+The Top Bar shows the Entity
+you are about to create or modify,
+while the Bottom Bar shows
+the functionality for each Icon.
+
+
+Info Bar & Navigation
+
+The Info Bar on the bottom shows
+the functionality for each Icon.
+Swiping left and right on Modules
+with                Icons allows
+you to swap through different
+Modes of each Section.
+
+
+
+Toolbar
+
+Depending on your Location
+within the App, the Toolbar
+changes to provide different
+Functionalities, including a
+Back-, Cancel- and Accept-Button
+
+
+Entity Item
+
+Every created Entity appears
+in the Form of an Entity Item.
+It can be swiped to each side to
+either drill down to another Entity
+or invoke a Functionality indicated
+by the corresponding Icon.
+
+
+Permissions
+
+These are all the Permissions
+necessary for the Application to
+work properly. Swipe right to
+grant the Permissions.
+
+
+Communications
+
+This is an overview of the
+Communication Systems used in
+this Application. Swiping right
+or left enables and disables
+each one of them separately.
+
+
+Sensors
+
+This is an overview of all
+Sensors used in this Application.
+Swiping right or left starts
+and stops a Diagnosis. Maximize
+the Info-Bar for Details.
+
+
+Functions
+
+These Functions allow you,
+to administrate the Application.
+Swipe right to execute them.
+
+
+Stakeholder Selection
+
+Swipe through your previous
+created Stakeholders to select
+the one you want to create a
+Scenario Path for.
+
+
+Element Selection
+
+Select the kind of Step/Trigger
+you want to use and swipe down
+to add it to your Path. Steps
+and Triggers alternate.
+
+
+Context Awareness
+
+Mentioning previous created
+Objects in this Text Field leads
+to their highlighting. While
+conducting a Walkthrough,
+Attributes of these Objects
+can be looked up.
+
+
+Walkthrough
+
+To start a Walkthrough,
+drill down through Projects,
+Scenarios and Stakeholders.
+While playing, you can access
+further Information on top.
+
+
+Element
+
+The Element you just created can
+either be edited by clicking the
+Edit-Button or deleted by holding
+down the Delete-Button for a
+certain amount of Time. Only the
+last Element can be deleted.
+
+
+If-Else Element
+
+An If-Else Element inhabits a
+Question and poses one or more
+possible options to pick from.
+On creation, the first option
+can be declared while further
+options can be added later.
+
+
+Configuring If-Else
+
+You can add or remove options to
+or from the If-Else Element by
+clicking the +/- on the right.
+Every option adds a Path that can
+be accessed in the dropdown.
+Elements here add to the main path
+
+
+Option Removal
+
+Select one or many options,
+besides your default option,
+and confirm to remove them.
+Be careful though, since this
+also removes their paths.
+
+
+Adding new Options
+
+Enter a name for your newly
+added Option and confirm.
+Build the path afterwards
+by selecting your option in
+the dropdown as explained
+in the previous tutorial.
+
+
+Switching Paths
+
+You switched to an alternative Path.
+Elements added here show up
+when choosing the corresponding
+Option. Swiping up loads the path
+you were previously editing.
+
+
+Share Data
+
+To share your created Data with
+other Users, you can export and
+import it here. Swipe left or right
+to access the different modes
+of Data-Sharing.
+
+
+Analytics
+
+Drill down to your own or shared
+Walkthroughs in order to analyze
+and compare them. You can also
+see Inputs that were given through
+the course of the Walkthrough
+or delete Walkthroughs entirely.
+
+
+Analytics Type
+
+After drilling down, you can switch
+between Walkthroughs (   ),
+Statistics (   ) and Comments(   ).
+Doing so, lets you investigate
+single Walkthroughs, Steps and
+Scenarios or Comments.
+
+
+Lookup
+
+This Input contains a Lookup.
+Lookups are Elements with preset
+Values to select. There are three
+types, Single-Select, Multi-Select
+and Single-Value. The first two
+add their selected Element below
+which can be removed again by
+long-clicking on it.
+
+
+Multitext
+
+This Input contains a Multitext.
+You can add your own Text by
+writing in the Text-Field and
+click "Add". Removing added
+Elements can be done by long-
+clicking on them.
+
+
+What-If
+
+By clicking on the ?-Button,
+you can add What-Ifs to a Step.
+These are questions to inspire
+Input during a Walkthrough. When
+opening the this Configuration
+without having specified any What-
+Ifs prior, some are generated.
+
+
+First Walkthrough
+
+Welcome to your first Walkthrough. While you proceed through one,
+you will sometimes get to access different Menus on the top.
+What-Ifs (      ) are Questions to inspire Comments, which can be
+given by using the     -Menu (at any Time). Colored words in
+the text can have associated Information which may be looked up
+in the menu associated to the      -Icon.
+
+
+Share Export
+
+You can share your Data with Others
+by exporting it. This generates an
+sre-File, which can be directly
+opened and imported again. In order
+to browse your Folder, you need an
+external File-Manager App.
+
+
+Share Import
+
+By either opening an sre-File
+directly in an external File-Manager
+App or selecting an Import-Folder
+via the internal option, you get
+to analyze and then import
+shared Data to your Application.
+
+
+NFC-Tag Writing
+
+The        Button lets you write
+Data to an NFC-Tag which you
+want to assign to the Step.
+After enabling it, place your
+Smartphone over the specific Tag.
+
+
+Wi-Fi P2P Export
+
+If your Device supports Wi-Fi P2P,
+you can directly share your Data
+by first gathering it, scan for
+Devices and send it by selecting
+one of the listed Devices.
+
+
+Wi-Fi P2P Import
+
+If your Device supports Wi-Fi P2P,
+you can receive data wirelessly.
+Wait until the sender pairs with
+your Device, accept and import
+the Data after successful
+transmission and analyzation.
+
+
+PDF & CSV
+
+Once you drilled down to the
+Scenario-Level, Exports to PDF-
+and CSV-Files become available
+in the Toolbar on Top.
+The Exports contain Data about
+the active Scenario.
+
+
+Copy
+
+Scenarios can be copied.
+To do so, click the      Button
+in the upper Toolbox to toggle
+the Copy-Mode. Swiping Elements
+to the right in this mode
+enables you to copy them.
+
+
+What-If Reply
+
+You can answer What-If questions by long-clicking on
+one of the proposed What-Ifs. This will open the Comment-
+Input which lets you reply to the selected statement.
+By clicking "Add", your input will then be contributed
+to your current Walkthrough.

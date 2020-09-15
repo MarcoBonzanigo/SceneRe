@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editor_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EditorActivity">
+
+    <include layout="@layout/sre_toolbar"
+        android:id="@+id/editor_toolbar" />
+    
+    <TextView
+        android:id="@+id/editor_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="@color/srePrimaryPastel"
+        android:background="@color/srePrimary"
+        android:text="@string/editor_title"
+        android:layout_below="@id/editor_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/editor_linear_layout_tool_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/srePrimary"
+        android:layout_below="@id/editor_text_label">
+
+        <Spinner
+            android:id="@+id/editor_spinner_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dpi3"
+            android:theme="@style/SpinnerStyle"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:entries="@array/spinner_empty">
+        </Spinner>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/editor_linear_layout_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/editor_linear_layout_tool_holder">
+    </LinearLayout>
+
+    <include layout="@layout/scroll_holder"
+        android:id="@+id/editor_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editor_linear_layout_control"/>
+
+
+</RelativeLayout>

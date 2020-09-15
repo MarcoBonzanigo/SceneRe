@@ -1,0 +1,685 @@
+<resources>
+    <string name="app_name">Scene-RE</string>
+    <!--Spinner-->
+    <string-array name="spinner_empty">
+        <item>@string/spinner_none</item>
+    </string-array>
+
+    <string-array name="spinner_steps">
+        <item>@string/step_none</item>
+        <item>@string/step_standard</item>
+        <item>@string/step_jump</item>
+        <item>@string/step_sound</item>
+        <item>@string/step_vibration</item>
+        <item>@string/step_resource</item>
+    </string-array>
+
+    <string-array name="spinner_triggers">
+        <item>@string/trigger_none</item>
+        <item>@string/trigger_button</item>
+        <item>@string/trigger_if_else</item>
+        <item>@string/trigger_stakeholder_interaction</item>
+        <item>@string/trigger_input</item>
+        <item>@string/trigger_resource</item>
+        <item>@string/trigger_nfc</item>
+        <item>@string/trigger_bt</item>
+        <item>@string/trigger_wifi</item>
+        <item>@string/trigger_gps</item>
+        <item>@string/trigger_call</item>
+        <item>@string/trigger_sms</item>
+        <item>@string/trigger_timer</item>
+        <item>@string/trigger_sound</item>
+    </string-array>
+
+    <string-array name="share_keywords">
+        <item>Owner</item>
+        <item>Size</item>
+        <item>Creation Date</item>
+        <item>Content</item>
+        <item>File-Format</item>
+        <item>Project(s)</item>
+        <item>Stakeholder(s)</item>
+        <item>Object(s)</item>
+        <item>Attribute(s)</item>
+        <item>Scenario(s)</item>
+        <item>Path(s)</item>
+        <item>Step(s)</item>
+        <item>Trigger(s)</item>
+        <item>Walkthrough(s)</item>
+    </string-array>
+
+    <string-array name="editor_attributes_step_standard">
+        <item>Title</item>
+        <item>Instruction Text</item>
+    </string-array>
+
+    <string-array name="editor_attributes_step_jump">
+        <item>Title</item>
+        <item>Instruction Text</item>
+        <item>Target Step</item>
+    </string-array>
+
+    <string-array name="editor_attributes_step_sound">
+        <item>Title</item>
+        <item>Instruction Text</item>
+    </string-array>
+
+    <string-array name="editor_attributes_step_vibration">
+        <item>Title</item>
+        <item>Instruction Text</item>
+    </string-array>
+
+    <string-array name="editor_attributes_step_resource">
+        <item>Title</item>
+        <item>Resource</item>
+        <item>Change (Optional)</item>
+        <item>Instruction Text</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_button">
+        <item>Button-Label</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_if_else">
+        <item>Question</item>
+        <item>Default Option</item>
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+        <item>Option 4</item>
+        <item>Option 5</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_if_else_init">
+        <item>Question</item>
+        <item>Default Option</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_if_else_removal">
+        <item>Remove Options</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_stakeholder_interaction">
+        <item>Instruction Text</item>
+        <item>Stakeholder</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_input">
+        <item>Instruction Text</item>
+        <item>Correct Answer</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_resource">
+        <item>Button Text</item>
+        <item>Resource</item>
+        <item>Check</item>
+        <item>Value</item>
+        <item>Step if Check false</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_nfc">
+        <item>Instruction Text</item>
+        <item>Message on Scan (Optional)</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_time">
+        <item>Instruction Text</item>
+        <item>Time (s)</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_sound">
+        <item>Instruction Text</item>
+        <item>Threshold (+/-dB)</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_gps">
+        <item>Instruction Text</item>
+        <item>Radius (m)</item>
+        <item>Latitude/Longitude</item>
+        <item>Open Location-Picker</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_wifi">
+        <item>Instruction Text</item>
+        <item>SSID/Regex</item>
+        <item>Signal Strength</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_bt">
+        <item>Instruction Text</item>
+        <item>Device-Name/Regex</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_call">
+        <item>Instruction Text</item>
+        <item>Phone-Nr./Regex</item>
+    </string-array>
+
+    <string-array name="editor_attributes_trigger_sms">
+        <item>Instruction Text</item>
+        <item>Phone-Nr./Regex</item>
+    </string-array>
+
+    <string name="spinner_none">[Select a Type first]</string>
+    <!--Steps-->
+    <string name="step_none">[Select a Step]</string>
+    <string name="step_standard">Standard Step</string>
+    <string name="step_jump">Jump Step</string>
+    <string name="step_sound">Sound Step</string>
+    <string name="step_vibration">Vibration Step</string>
+    <string name="step_resource">Resource Step</string>
+    <!--Trigger-->
+    <string name="trigger_none">[Select a Trigger]</string>
+
+    <string name="trigger_button">Button Trigger</string>
+    <string name="trigger_if_else">If-Else Trigger</string>
+    <string name="trigger_stakeholder_interaction">Stakeholder Interaction Trigger</string>
+    <string name="trigger_input">Passphrase-Input Trigger</string>
+    <string name="trigger_timer">Timer Trigger</string>
+    <string name="trigger_resource">Resource-Check Trigger</string>
+
+    <string name="trigger_bt">Bluetooth Trigger</string>
+    <string name="trigger_gps">GPS Trigger</string>
+    <string name="trigger_mobile">Mobile Network Trigger</string>
+    <string name="trigger_nfc">NFC Trigger</string>
+    <string name="trigger_wifi">Wi-Fi Trigger</string>
+
+    <string name="trigger_call">Call Trigger</string>
+    <string name="trigger_sms">SMS Trigger</string>
+    <string name="trigger_sound">Sound Trigger</string>
+
+    <string name="trigger_acceleration">Acceleration Trigger</string>
+    <string name="trigger_gyroscope">Gyroscope Trigger</string>
+    <string name="trigger_humidity">Humidity Trigger</string>
+    <string name="trigger_light">Light Trigger</string>
+    <string name="trigger_magnetic">Magnetic Trigger</string>
+    <string name="trigger_pressure">Pressure Trigger</string>
+    <string name="trigger_proximity">Proximity Trigger</string>
+    <string name="trigger_temperature">Temperature Trigger</string>
+
+
+    <!--Questions-->
+
+    <string-array name="question_words">
+        <item>what</item>
+        <item>when</item>
+        <item>where</item>
+        <item>which</item>
+        <item>who</item>
+        <item>whom</item>
+        <item>whose</item>
+        <item>why</item>
+        <item>how</item>
+    </string-array>
+    <!--Cockpit-->
+    <string name="cockpit_info_title">Info Text</string>
+    <string name="cockpit_info_permissions">This view shows you all missing Permissions\nSwipe left to see further Details\nSwipe right to grant the Permission\nNote:\nMost of these Permissions are needed for the App to function</string>
+    <string name="cockpit_info_communications">This view shows the available Communication Technologies\nSwipe right to enable, or left to disable each Technology</string>
+    <string name="cockpit_info_sensors">This view shows all Sensors used in this App\nSwipe right to start a Diagnosis\nSwipe left to disable the Diagnosis again</string>
+    <string name="cockpit_info_admin">This view contains Functions to administrate the Application</string>
+    <string name="cockpit_tutorial_reset">Reset Tutorials</string>
+    <string name="cockpit_tutorial_reset_confirm">Tutorials reset! Disable to hide again.</string>
+    <string name="cockpit_tutorial_disable">Disable Tutorials</string>
+    <string name="cockpit_tutorial_disable_confirm">Tutorials disabled! Reset to show again.</string>
+    <string name="cockpit_wipe_data">Wipe Data</string>
+    <string name="cockpit_wipe_walkthroughs">Wipe All Walkthroughs</string>
+    <string name="cockpit_wipe_data_confirm">All Data wiped!</string>
+    <string name="cockpit_wipe_walkthroughs_confirm">All Walkthroughs wiped!</string>
+    <string name="cockpit_mode_contrast">Display Mode: CONTRAST</string>
+    <string name="cockpit_mode_oled">Display Mode: OLED</string>
+    <string name="cockpit_mode_normal">Display Mode: NORMAL</string>
+    <string name="cockpit_mode_x">Display Mode: %1$s</string>
+    <string name="permission_description_network_title">Network-Permissions</string>
+    <string name="permission_description_storage_title">Storage-Permissions</string>
+    <string name="permission_description_audio_title">Audio-Permissions</string>
+    <string name="permission_description_bluetooth_title">Bluetooth-Permissions</string>
+    <string name="permission_description_wifi_title">Wi-Fi-Permissions</string>
+    <string name="permission_description_nfc_title">NFC-Permissions</string>
+    <string name="permission_description_sms_title">SMS-Permissions</string>
+    <string name="permission_description_gps_title">GPS-Permissions</string>
+    <string name="permission_description_telephony_title">Telephony-Permissions</string>
+    <string name="permission_description_device_title">Device-Permissions</string>
+    <string name="permission_description_shortcuts_title">Shortcut-Permissions</string>
+    <string name="permission_description_network">Used to connect to the Internet.</string>
+    <string name="permission_description_storage">Used to store Data and Settings.</string>
+    <string name="permission_description_audio">Used for special Triggers.</string>
+    <string name="permission_description_bluetooth">Used to scan for other Devices.</string>
+    <string name="permission_description_wifi">Used to scan for Access-Points and Sharing.</string>
+    <string name="permission_description_nfc">Used to interact with NFC Tags.</string>
+    <string name="permission_description_sms">Used for special Triggers.</string>
+    <string name="permission_description_gps">Used for special Triggers.</string>
+    <string name="permission_description_telephony">Used for special Triggers.</string>
+    <string name="permission_description_device">Used for Vibration and Sound.</string>
+
+    <!--General-->
+    <string name="empty" />
+    <string name="label">%1$s:</string>
+    <string name="input">Input %1$s</string>
+    <string name="x_deleted">%1$s Deleted!</string>
+    <string name="add">Add</string>
+    <string name="deleted">Deleted!</string>
+    <string name="none">None</string>
+    <string name="observing">Observing %1$s</string>
+    <string name="pound">#</string>
+    <string name="color_alpha_rgb">#%1$s%2$s</string>
+
+    <!--Info-->
+    <string name="projects_create">Creating a new Project</string>
+    <string name="projects_edit">Edit Project</string>
+    <string name="stakeholders_create">Creating a new Stakeholder</string>
+    <string name="stakeholders_edit">Edit Stakeholder</string>
+    <string name="scenarios_create">Creating a new Scenario</string>
+    <string name="scenarios_copy">Copy Scenario</string>
+    <string name="scenarios_edit">Edit Scenario</string>
+    <string name="objects_create">Creating a new Object</string>
+    <string name="objects_edit">Edit Object</string>
+    <string name="attributes_create">Creating a new Attribute</string>
+    <string name="attributes_edit">Edit Attribute</string>
+
+    <!--Titles-->
+    <string name="cockpit_title"><b>Cockpit</b></string>
+    <string name="projects_title"><b>Projects</b></string>
+    <string name="stakeholders_title">Projects/<b>Stakeholders</b></string>
+    <string name="objects_title">Projects/Scenarios/<b>Objects</b></string>
+    <string name="scenarios_title">Projects/<b>Scenarios</b></string>
+    <string name="attributes_title">Projects/Scenarios/Objects/<b>Attributes</b></string>
+    <string name="editor_title"><b>Editor</b></string>
+    <string name="walkthrough_title">Walkthrough</string>
+    <string name="analytics_title">Analytics</string>
+    <string name="main_menu_title">Main Menu</string>
+    <string name="glossary_title">Glossary</string>
+    <string name="share_title">Share</string>
+    <string name="startup_title">Startup</string>
+
+    <!--Explanations-->
+    <string name="explanation_steps_title">Steps</string>
+    <string name="explanation_steps_content">Steps are single Actions in a Scenario.</string>
+    <string name="explanation_communication_triggers_title">Communication Triggers</string>
+    <string name="explanation_communication_triggers_content">Triggers are Events that let a Scenario transition from one to the another Step\nCommunication Triggers are based on Bluetooth, GPS, Mobile Networks, NFC and Wi-Fi.</string>
+    <string name="explanation_direct_triggers_title">Direct Triggers</string>
+    <string name="explanation_direct_triggers_content">Triggers are Events that let a Scenario transition from one to the another Step\nDirect Triggers are based on Buttons and Timers.</string>
+    <string name="explanation_indirect_triggers_title">Indirect Triggers</string>
+    <string name="explanation_indirect_triggers_content">Triggers are Events that let a Scenario transition from one to the another Step\nIndirect Triggers are based on Calls, SMS and Sound.</string>
+    <string name="explanation_sensor_triggers_title">Sensor Triggers</string>
+    <string name="explanation_sensor_triggers_content">Triggers are Events that let a Scenario transition from one to the another Step\nSensor Triggers are based on Acceleration, Gyroscope, Humidity, Light, Magnetism, Pressure, Proximity and Temperature.</string>
+    <string name="explanation_step_standard">A standard Step with a simple Text.</string>
+
+    <!--Walkthrough-->
+    <string name="walkthrough_button_label">Select one of %1$d %2$s</string>
+    <string name="walkthrough_button_label_failure">No %1$s created yet</string>
+    <string name="walkthrough_selection_info">Select an Object you want Information about</string>
+    <string name="walkthrough_selection_no_info">No Context Information available</string>
+    <string name="walkthrough_selected_scenario">Selected Scenario: %1$s</string>
+    <string name="walkthrough_selected_project">Selected Project: %1$s</string>
+    <string name="walkthrough_selected_analytics">Analytics: %1$s</string>
+    <string name="walkthrough_complete">Complete Walkthrough</string>
+    <string name="walkthrough_see_more">See more Details in the Analytics</string>
+    <string name="walkthrough_confirm">Press the Back Button again to cancel the Walkthrough</string>
+    <string name="walkthrough_confirm_button">Confirm Deletion</string>
+    <string name="walkthrough_delete">Delete Walkthrough</string>
+    <string name="walkthrough_correct_code">Correct Code!</string>
+    <string name="walkthrough_incorrect_code">Wrong Code!</string>
+    <string name="walkthrough_check_code">Check Code</string>
+    <string name="walkthrough_input_code">Input Code here</string>
+    <string name="walkthrough_interaction_text">%1$s<![CDATA[<br>]]>Exchange your Interaction-Code with %2$s!<![CDATA[<br>]]>Your Code: %3$s</string>
+    <string name="walkthrough_input_text">%1$s<![CDATA[<br>]]>Insert the required Input in the Field below and check it to continue.</string>
+    <string name="walkthrough_nfc_text">%1$s<![CDATA[<br>]]>Scan the corresponding NFC-Tag to continue.</string>
+    <string name="walkthrough_wifi_text">%1$s<![CDATA[<br>]]>Get in reach of the Wi-Fi-Access Point to continue.<![CDATA[<br>]]>The Progress-Bar shows your proximity.</string>
+    <string name="walkthrough_gps_text">%1$s<![CDATA[<br>]]>Get in %2$d m reach of the Location to continue.<![CDATA[<br>]]>Your proximity is shown below.<![CDATA[<br>]]>%3$s%4$s</string>
+    <string name="walkthrough_telephone_text">%1$s<![CDATA[<br>]]>Wait for a call to continue.<![CDATA[<br>]]>Number-Pattern:<![CDATA[<br>]]>%2$s</string>
+    <string name="walkthrough_sms_text">%1$s<![CDATA[<br>]]>Wait for an SMS to continue.<![CDATA[<br>]]>Number-Pattern:<![CDATA[<br>]]>%2$s</string>
+    <string name="walkthrough_bluetooth_text">%1$s<![CDATA[<br>]]>Get in reach of a Bluetooth Device to continue.<![CDATA[<br>]]>Device-Name:<![CDATA[<br>]]>%2$s</string>
+    <string name="walkthrough_timer_text">%1$s<![CDATA[<br>]]>Wait for the Timer to expire in order to continue.<![CDATA[<br>]]>Remaining Time:<![CDATA[<br>]]>%2$s</string>
+    <string name="walkthrough_sound_text">%1$s<![CDATA[<br>]]>Surpass the Sound-Threshold to continue. Calibrate again if Measurements are unusual.<![CDATA[<br>]]>Threshold: %2$s dB<![CDATA[<br>]]>Current: %3$s</string>
+    <string name="walkthrough_interaction_code">Interaction-Code</string>
+    <string name="walkthrough_start_scenario">Start Scenario</string>
+    <string name="walkthrough_initiation">Initiation</string>
+    <string name="walkthrough_description">Description</string>
+    <string name="walkthrough_introduction">Introduction</string>
+    <string name="walkthrough_intro_text">In this Walkthrough you play as %1$s<![CDATA[<br>]]>Description: %2$s<![CDATA[<br>]]>Introduction: %3$s</string>
+    <string name="walkthrough_question_option">Question [%1$d Option(s)]:</string>
+    <string name="walkthrough_outro">Outro</string>
+    <string name="walkthrough_intro">Intro</string>
+    <string name="walkthrough_statistics">Statistics</string>
+    <string name="walkthrough_finish_scenario">Finish Scenario</string>
+    <string name="walkthrough_concat_br">%1$s<![CDATA[<br>]]>%2$s</string>
+    <string name="walkthrough_input_here">Write Input here</string>
+    <string name="walkthrough_check_input">Check Input</string>
+    <string name="walkthrough_enable_nfc">Enable NFC</string>
+    <string name="walkthrough_enable_wifi">Enable Wi-Fi</string>
+    <string name="walkthrough_enable_bluetooth">Enable Bluetooth</string>
+    <string name="walkthrough_grant_permission">Grant Permissions</string>
+    <string name="walkthrough_calibrate_sound">Calibrate again</string>
+    <string name="walkthrough_enable_gps">Enable GPS</string>
+    <string name="walkthrough_open_location">Open Location</string>
+    <string name="walkthrough_end_scenario">End Scenario</string>
+    <string name="walkthrough_input_correct">Correct Input</string>
+    <string name="walkthrough_input_incorrect">Wrong Input</string>
+    <string name="walkthrough_transition_button_x">Button: %1$s</string>
+    <string name="walkthrough_transition_button">Button</string>
+    <string name="walkthrough_transition_automatic">Automatic</string>
+    <string name="walkthrough_transition_input">Input entered correctly</string>
+    <string name="walkthrough_transition_interaction">Entered Interaction-Code</string>
+    <string name="walkthrough_transition_nfc_scanned">NFC-Tag Scanned</string>
+    <string name="walkthrough_what_if_browse">Browse available What-If Questions</string>
+    <string name="walkthrough_contribute_comments">Write down your Comment and press \"Add\" to contribute it</string>
+    <string name="walkthrough_contribute_what_if_reply">Write down your What-If Reply and press \"Add\" to contribute it</string>
+    <string name="walkthrough_final_state_cancelled_nfc">Cancelled during the %1$s Step, \"%2$s\" (NFC not supported)</string>
+    <string name="walkthrough_final_state_cancelled_audio">Cancelled during the %1$s Step, \"%2$s\" (Audio not supported)</string>
+    <string name="walkthrough_final_state_cancelled_gps">Cancelled during the %1$s Step, \"%2$s\" (GPS not supported)</string>
+    <string name="walkthrough_final_state_cancelled_intro">Cancelled during the Intro</string>
+    <string name="walkthrough_final_state_cancelled_outro">Cancelled during the Outro</string>
+    <string name="walkthrough_final_state_cancelled">Cancelled during the %1$s Step, \"%2$s\"</string>
+    <string name="walkthrough_final_state_cancelled_check">Cancelled during the </string>
+    <string name="walkthrough_final_state_complete">Walkthrough completed successfully</string>
+    <string name="walkthrough_gps_destination_reached">Destination reached!</string>
+    <string name="walkthrough_sound_threshold_reached">Threshold surpassed!</string>
+    <string name="walkthrough_transition_sound">Sound-Threshold surpassed</string>
+    <string name="walkthrough_timer_expired">Timer expired!</string>
+    <string name="walkthrough_gps_evaluation">Evaluating Distance</string>
+    <string name="walkthrough_gps_distance">Distance: %1$s m</string>
+    <string name="walkthrough_calibrating">Calibrating…</string>
+    <string name="walkthrough_shortcut_created">Shortcut created!</string>
+    <string name="walkthrough_shortcut_creation_failed">Shortcut creation failed!</string>
+    <string name="walkthrough_shortcut_creation">Walkthrough state saved to "%1$s"!</string>
+    <string name="walkthrough_transition_wifi_discovered">Wi-Fi discovered</string>
+    <string name="walkthrough_transition_call">Call received</string>
+    <string name="walkthrough_transition_sms">SMS received</string>
+    <string name="walkthrough_transition_bluetooth">In proximity to Device</string>
+    <string name="walkthrough_transition_timer">Timer expired</string>
+    <string name="walkthrough_resource_state">After %1$s %2$s %3$s, you have a total of %4$d %5$s.</string>
+    <string name="walkthrough_resource_input">Enter an Amount to subtract from / add to your %1$s.<![CDATA[<br>]]>Lower Bound: %2$d, Upper Bound: %3$d, Current: %4$d</string>
+    <string name="walkthrough_resource_deleted">The Resource from this Step no longer exists. Continuation without Resource.</string>
+    <string name="walkthrough_resource_adding">adding</string>
+    <string name="walkthrough_resource_subtracting">subtracting</string>
+    <string name="walkthrough_resource_unchanged">You did not change the Amount of %1$s!</string>
+    <string name="walkthrough_resource_change_equal">You changed the amount of %1$s to %2$d</string>
+    <string name="walkthrough_resource_change_too_low">Number too small, adjusted change to: %1$d, current: %2$d</string>
+    <string name="walkthrough_resource_change_too_high">Number too big, adjusted change to: %1$d, current:  %2$d</string>
+    <string name="walkthrough_resource_does_not_exist_continue">The checked Resource does not exist anymore, continue!</string>
+    <string name="walkthrough_nfc_tag_wrong">Wrong NFC-Tag scanned!</string>
+
+    <string name="resource_check_above">%1$s was above %2$d (%3$d)</string>
+    <string name="resource_check_below">%1$s was below %2$d (%3$d)</string>
+    <string name="resource_check_equal">%1$s was equal to %2$d (%3$d)</string>
+    <string name="resource_check_not_equal">%1$s was not equal to %2$d (%3$d)</string>
+    <string name="resource_check_success">Resource-Check succeeded, %1$s</string>
+    <string name="resource_check_failed">Resource-Check failed</string>
+
+    <!--Literal and related-->
+    <string name="literal_object">Object</string>
+    <string name="literal_attribute">Attribute</string>
+    <string name="literal_scenarios">Scenarios</string>
+    <string name="literal_projects">Projects</string>
+    <string name="literal_stakeholders">Stakeholders</string>
+    <string name="literal_stakeholder">Stakeholder</string>
+    <string name="literal_steps_with_comments">Steps with Comments</string>
+    <string name="literal_value">Value</string>
+    <string name="literal_walkthroughs">Walkthroughs</string>
+    <string name="literal_walkthrough">Walkthrough</string>
+    <string name="literal_what_if">What-If</string>
+    <string name="literal_what_if_x">What-if: %1$s Reply:%2$s</string>
+    <string name="literal_what_ifs">What-Ifs</string>
+    <string name="literal_comment">Comment</string>
+    <string name="literal_remove_all">Remove All</string>
+    <string name="literal_project">Project</string>
+    <string name="literal_scenario">Scenario</string>
+    <string name="literal_resource">Resource</string>
+    <string name="literal_step">Step</string>
+    <string name="literal_trigger">Trigger</string>
+    <string name="literal_editor">Editor</string>
+    <string name="literal_user">User</string>
+    <string name="literal_administrator">Administrator</string>
+    <string name="literal_date">Date</string>
+    <string name="literal_paths">Paths</string>
+    <string name="literal_steps">Steps</string>
+    <string name="literal_objects">Objects</string>
+    <string name="literal_resources">Resources</string>
+    <string name="literal_introduction">Introduction</string>
+    <string name="literal_conclusion">Conclusion</string>
+    <string name="literal_copy">Copy</string>
+    <string name="project_anonymous">Anonymous Project</string>
+    <string name="scenario_anonymous">Anonymous Scenario</string>
+    <string name="objects_similar_alert">An AbstractObject with similar Name already exists.</string>
+
+    <!--XML-->
+    <string name="xml_declaration"><![CDATA[<?xml version="1.0" encoding="utf-8"?>]]></string>
+    <string name="xml_begin_tag"><![CDATA[<]]>%1$s type=<![CDATA["]]>%2$s<![CDATA[">]]></string>
+    <string name="xml_begin_tag_id"><![CDATA[<]]>%1$s id=<![CDATA["]]>%2$s<![CDATA[">]]></string>
+    <string name="xml_end_tag"><![CDATA[</]]>%1$s<![CDATA[>]]></string>
+    <string name="xml_empty"><![CDATA[<]]>%1$s<![CDATA[/>]]></string>
+    <string name="xml_enclosing"><![CDATA[<]]>%1$s<![CDATA[ type="]]>%2$s<![CDATA[">]]>%3$s<![CDATA[</]]>%1$s<![CDATA[>]]></string>
+
+    <!--Tutorial-->
+    <string name="tutorial_close">Close</string>
+    <string name="tutorial_next">Next</string>
+
+    <!--Glossary-->
+    <string name="glossary_project">Projects contain all data to conduct Walkthroughs. It can be seen as a wrapper to group Stakeholders, Scenarios, Objects, Attributes and all the other Entities together.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Example:<![CDATA[</u>]]><![CDATA[</b>]]><![CDATA[<br>]]>
+    Launch of a digital Access System</string>
+    <string name="glossary_stakeholder">Stakeholders are people that can be impersonated while conducting Walkthroughs. For each Stakeholder within a Scenario, a path of consecutive Steps can be modelled for him/her to follow.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Example:<![CDATA[</u>]]><![CDATA[</b>]]><![CDATA[<br>]]>
+    Access-Card Vendor</string>
+    <string name="glossary_object">Objects can be integrated in Steps and enriched with Attributes to provide contextual information. Integrating Objects in Steps allows the Walkthrough conductor to access their Attributes as information base. What-If questions can draw contextual information from them. An Object can be labeled as Resource and used in Resource-Steps and -Triggers.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Example:<![CDATA[</u>]]><![CDATA[</b>]]><![CDATA[<br>]]>
+    Access-Card</string>
+    <string name="glossary_attribute">Attributes belong to Objects and can be looked up while conducting a Walkthrough. What-If questions can draw contextual information from them.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Example:<![CDATA[</u>]]><![CDATA[</b>]]><![CDATA[<br>]]>
+    Access-Card Color: Blue</string>
+    <string name="glossary_resource">Resources are special Objects that have a numerical value. There are special Steps that integrate these Resources and manipulate their value by either increasing, decreasing or checking it.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Example:<![CDATA[</u>]]><![CDATA[</b>]]><![CDATA[<br>]]>
+    Number of Admissions</string>
+    <string name="glossary_scenario">Scenarios consist of a continuous sequence of Steps and Triggers for each Stakeholder and can be seen as Theater Scripts. Together they build a Path which will be played while conducting a Walkthrough. The main-Path can branch out in different Paths by including If-Else Triggers.</string>
+    <string name="glossary_walkthrough">Walkthroughs are the actual conduction of playing through a Scenario and can be seen as Theater Performance. While playing through Scenarios,  What-If Questions  and contextual Information about Objects are sometimes available. Since the Walkthroughs should spark ideas, Input can be added at any given point.</string>
+    <string name="glossary_what_if">What-Ifs are questions that can be configured on Steps. If done so, these questions will appear in the Walkthrough. They serve the purpose to inspire the thought-process of the user during a walkthrough. If no What-Ifs are configured on a Step, opening the Dialog for their configuration will propose several generated Questions. These can be cleared or complemented at will. Writing your own is also possible, and is assisted by proposal of related Stakeholders and Objects. The type of Suggestions can be configured in the Cockpit (All, Dynamic, Stakeholder only, Objects only, Static or None). After a set amount of Suggestions, configurable in the Cockpit, the list gets expanded or narrowed based on your actions and preferences. Suggestions can be reset in the Cockpit.</string>
+    <string name="glossary_step">Steps are Elements that make up a Path in a Scenario. They guide the Stakeholder through the Walkthrough and provide Information.<![CDATA[<br>]]>
+    <![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Standard Step:<![CDATA[</u>]]><![CDATA[</b>]]> Step with Title- and Content-Text.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Jump Step:<![CDATA[</u>]]><![CDATA[</b>]]> Step to alternate the Walkthrough flow - jumps to the configured Step after Trigger invocation.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Sound Step:<![CDATA[</u>]]><![CDATA[</b>]]> Standard Step which plays a Sound on the Beginning.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Vibration Step:<![CDATA[</u>]]><![CDATA[</b>]]> Standard Step which vibrates on the Beginning.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Resource Step:<![CDATA[</u>]]><![CDATA[</b>]]> Step to introduce and alternate Resources. The Change can be either positive, negative or empty. If left empty, the User gets to decide the Change.<![CDATA[<br>]]>
+
+    </string>
+    <string name="glossary_trigger">Trigger get combined with Steps and decide when the Walkthrough continues with the next step and which step this will be.<![CDATA[<br>]]>
+    <![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Button Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Trigger with simple Button to click.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>If-Else Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Trigger with multiple Buttons to create alternate Paths.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Stakeholder Interaction Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Requires an interaction of the involved Stakeholders and Exchange of a Code to continue.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Passphrase-Input Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Trigger with Passphrase, required to continue.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Resource-Check Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Checks if a Resource-Value is below, above, equal or not equal to a certain Value. The Resource has to be modified by a Step before to be checked. Only Resources from the Scenario-Scope can be checked.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>NFC Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Continuation after the correct NFC-Tag is scanned. NFC-Tags can be written in the Editor, on this specific Trigger-Element.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Bluetooth Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Continuation after your Smartphone discovers a specific Bluetooth-Device whose name matches a specific Text or Regex-Pattern.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Wi-Fi Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Continuation after your Smartphone discovers a certain Wi-Fi Network whose SSID matches a specific Text or Regex-Pattern.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>GPS Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Continuation after getting in a predefined distance to a configured Location. The integrated Location-Picker allows you to select a Point on the Map and copy the coordinates to the Clipboard.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Call Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Continuation after receiving a Call from a certain Number or Number-Pattern. This will finish the Call automatically.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>SMS Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Continuation after receiving an SMS from a certain Number or Number-Pattern.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Timer Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Continuation after a set amount of Time.<![CDATA[<br>]]>
+    <![CDATA[<b>]]><![CDATA[<u>]]>Sound Trigger:<![CDATA[</u>]]><![CDATA[</b>]]> Continuation after the recorded Sound-Amplitude surpassed a defined Threshold (positive or negative). The relative amplitude can be adjusted in the Walkthrough.<![CDATA[<br>]]>
+    </string>
+    <string name="glossary_editor">The Editor provides the Tools to put together the Paths contained in a Scenario.<![CDATA[<br>]]>
+    <![CDATA[<br>]]>
+   </string>
+
+    <!--Share-->
+    <string name="share_import_folder">Select a Folder for Import</string>
+    <string name="share_import_file">Select a File for Import</string>
+    <string name="share_export_data">Export Data</string>
+    <string name="share_export_location">Open Export-Location or File</string>
+    <string name="share_export_finished">Export finished</string>
+    <string name="share_export_file_prefix">Export_</string>
+    <string name="share_error_empty">Wrong File-Format or Content is missing!</string>
+    <string name="share_error_format">Wrong File-Format!</string>
+    <string name="share_error_invalid">Validation Failed!</string>
+    <string name="share_error_no_data">No Data created yet!</string>
+    <string name="share_location">Locate File in Import-Folder</string>
+    <string name="share_no_folder">No Folder selected</string>
+    <string name="share_too_many_files">More than 100 Files in current Folder… remove some!</string>
+    <string name="share_too_many_files_failed">The Folder could not be read correctly!</string>
+    <string name="share_too_many_files_title">Too many Files</string>
+    <string name="share_return">Return</string>
+    <string name="share_import_newer">Import Newer (%1$d)</string>
+    <string name="share_import">Import</string>
+    <string name="share_import_finished">Import finished</string>
+    <string name="share_import_all_1">Import All</string>
+    <string name="share_import_all_2">Import (all Items are old)</string>
+    <string name="share_import_number_successful">All %1$d Items imported successfully.</string>
+    <string name="share_click_to_import">Select one of the %1$d Files to analyze it</string>
+    <string name="share_folder">Folder: %1$s</string>
+    <string name="share_mode_file_export">File Export Mode</string>
+    <string name="share_collect_data">Collect your Data</string>
+    <string name="share_include_walkthroughs">Data-Mode: Include Walkthroughs</string>
+    <string name="share_exclude_walkthroughs">Data-Mode: Exclude Walkthroughs</string>
+    <string name="share_only_walkthroughs">Data-Mode: Only Walkthroughs</string>
+    <string name="share_received_kb">Received %1$d kB!</string>
+    <string name="share_your_device_id">Your Device-ID: %1$s</string>
+    <string name="share_send_to">Send to %1$s</string>
+    <string name="share_cancel_scan">Cancel Scan</string>
+    <string name="share_scan_for_devices">Scan for Devices</string>
+    <string name="share_disconnected">Disconnected</string>
+    <string name="share_connected">Connected to Device: %1$s</string>
+    <string name="share_connected_unknown">Connected to Device</string>
+    <string name="share_loading">Loading…</string>
+    <string name="share_collection_failed">Data Collection failed!</string>
+    <string name="share_no_dropbox">Dropbox not supported yet!</string>
+
+    <!--Analytics-->
+    <string name="analytics_statistics">Statistics</string>
+    <string name="analytics_comments">Comments</string>
+    <string name="analytics_walkthroughs">Walkthroughs</string>
+    <string name="warn_not_all_required_info_entered">Not all required information entered!</string>
+    <string name="analytics_avg_time">Avg. Time</string>
+    <string name="analytics_step_number">Step #</string>
+    <string name="analytics_step_stakeholder">Stakeholder</string>
+    <string name="analytics_step_title">Step Title</string>
+    <string name="analytics_step_text">Step Text</string>
+    <string name="analytics_step_runs">Step Runs</string>
+    <string name="analytics_comment_timestamp">Comment Timestamp</string>
+    <string name="analytics_comment_of">Comment of %1$s</string>
+    <string name="analytics_x_seconds">%1$d Second(s)</string>
+    <string name="analytics_transition_x">Transition #%1$d</string>
+    <string name="analytics_path_version_x">Path Version %1$d</string>
+    <string name="analytics_walkthrough_x">Walkthrough #%1$d</string>
+    <string name="analytics_walkthrough_cancelled">Cancelled</string>
+    <string name="analytics_unknown">Unknown</string>
+    <string name="analytics_no_walkthrough">No Walkthroughs found</string>
+    <string name="analytics_comments_export">A total of %1$d Comments in %2$d Steps were written.</string>
+    <string name="analytics_statistics_export">Walkthroughs were conducted by a total of %1$d Stakeholder(s): %2$s.</string>
+    <string name="analytics_export_walkthrough">A total of %1$d Walkthrough(s) have been conducted in this Scenario.</string>
+    <string name="analytics_pdf_cancel">PDF-Export Cancelled!</string>
+    <string name="analytics_pdf_complete">PDF-Export Complete!</string>
+    <string name="analytics_pdf_csv_start_text">This can take a few Minutes!</string>
+    <string name="analytics_csv_cancelled">CSV-Export Cancelled!</string>
+    <string name="analytics_csv_start_title">CSV Export started in Background</string>
+    <string name="analytics_csv_complete">CSV-Export Complete!</string>
+    <string name="analytics_export_walkthrough_x">Walkthrough #%1$d</string>
+
+    <!--Startup-->
+    <string name="startup_name_change">Do you want to change your Name?</string>
+    <string name="startup_welcome_back">Welcome Back</string>
+    <string name="startup_name_enter">Please enter a Name</string>
+    <string name="startup_enter_name">Name</string>
+    <string name="startup_enter_name_title">Enter your Name</string>
+    <string name="startup_confirm">Confirm</string>
+
+    <!--Editor-->
+    <string name="editor_no_stakeholder">No Stakeholders, Path cannot be built.</string>
+    <string name="editor_main_path">Currently on the main-Path</string>
+    <string name="editor_alternative_path">Currently on an alternative-Path</string>
+    <string name="editor_nfc_disabled">NFC disabled!</string>
+    <string name="editor_no_steps_text">You will not be able to configure this Step</string>
+    <string name="editor_no_steps_title">No Steps created yet</string>
+    <string name="editor_no_resources_title">No Resources created yet</string>
+    <string name="editor_no_resource_trigger_text">You will not be able to configure this Trigger</string>
+    <string name="editor_no_resource_step_text">You will not be able to configure this Step</string>
+    <string name="editor_gps_warning">Latitude/Longitude</string>
+    <string name="editor_gps_warning_replace">Input Latitude/Longitude</string>
+    <string name="editor_gps_formatting">e.g. 47.123456,8.123456</string>
+    <string name="editor_gps_warning_text">Wrong format. Expected: 47.123456,8.123456</string>
+    <string name="editor_nfc_data">NFC Data</string>
+    <string name="editor_nfc_loaded">Loaded, place your Phone on the Tag!</string>
+    <string name="editor_nfc_cleared">NFC Data cleared!</string>
+
+    <string name="nfc">NFC</string>
+    <string name="nfc_too_large">Data too large for NFC-Tag!</string>
+    <string name="nfc_success">Data write successful!</string>
+    <string name="nfc_write_not_supported">Writing to NFC-Tag not supported!</string>
+    <string name="nfc_no_init">Could not initialize NFC-Tag!</string>
+    <string name="nfc_no_data">No data on the NFC-Tag!</string>
+
+    <string name="filter_optional">(Optional)</string>
+    <string name="filter_regex">/Regex</string>
+    <string name="filter_s">(s)</string>
+    <string name="filter_m">(m)</string>
+    <string name="filter_dB">(+/-dB)</string>
+    <string name="filter_next_step"> Check false</string>
+
+    <string name="x_not_supported">not supported</string>
+    <string name="x_disabled">disabled</string>
+    <string name="x_not_granted">not granted</string>
+    <string name="cockpit_normal_mode">Contrast-Mode Off</string>
+    <string name="cockpit_contrast_mode">Contrast-Mode On</string><string name="objects_min_max_alert">The Maximum must be greater than the Minimum!</string>
+    <string name="objects_init_max_alert">The Initial-Value must be less than or equal the Maximum!</string>
+    <string name="objects_init_min_alert">The Initial-Value must be greater than or equal the Minimum!</string>
+    <string name="objects_min_max_alert_title">Invalid Numbers</string>
+
+    <!--WHAT IF-->
+    <string name="what_if_wipe">Wipe All What-If Suggestions</string>
+    <string name="what_if_frequency_x">What-If AI Trigger Frequency: %1$d</string>
+    <string name="what_if_frequency_set">What-If AI Trigger Frequency set to: Every %1$s Time.</string>
+    <string name="what_if_frequency_set_to_1">What-If AI Trigger Frequency set to: Every Time.</string>
+    <string name="what_if_all">What-If Suggestions: All</string>
+    <string name="what_if_dynamic">What-If Suggestions: Dynamic</string>
+    <string name="what_if_stakeholder">What-If Suggestions: Stakeholders</string>
+    <string name="what_if_objects">What-If Suggestions: Objects</string>
+    <string name="what_if_static">What-If Suggestions: Static</string>
+    <string name="what_if_none">What-If Suggestions: None</string>
+    <string name="what_if_all_text">Displaying all Suggestions</string>
+    <string name="what_if_dynamic_text">Displaying only Stakeholder-/Object-Suggestions</string>
+    <string name="what_if_stakeholder_text">Displaying only Stakeholder-Suggestions</string>
+    <string name="what_if_objects_text">Displaying only Object-Suggestions</string>
+    <string name="what_if_static_text">Displaying only unspecific Suggestions</string>
+    <string name="what_if_none_text">Displaying no Suggestions</string>
+    <string name="what_if_wipe_confirm">All What-Ifs reset!</string>
+
+    <string name="picker_copy_to_clipboard">Copy Location to Clipboard</string>
+    <string name="picker_position">Position</string>
+    <string name="picker_no_location_title">No Location</string>
+    <string name="picker_no_location_content">Tap on the Map to specify a Location!</string>
+    <string name="picker_cancel">Cancel</string>
+    <string name="picker_no_location_copied">No Location copied!</string>
+    <string name="picker_location_picked">Location copied to Clipboard!</string>
+    <string name="picker_reset">Reset Location</string>
+
+    <string name="pdf_start_title">PDF-Export started in Background</string>
+    <string name="cockpit_user_mode">Scene-RE Mode:  %1$s</string>
+    <string name="cockpit_mode">Cockpit-Mode</string>
+
+    <!--Scenario-->
+    <string name="scenario_name">Scenario Name</string>
+    <string name="scenario_intro">Scenario Intro</string>
+    <string name="scenario_outro">Scenario Outro</string>
+    <string name="scenario_create">Create New Scenario</string>
+
+    <!--Project-->
+    <string name="project_title">Project Title</string>
+    <string name="project_description">Project Description</string>
+    <string name="project_create">Create New Project</string>
+
+    <!--Object-->
+    <string name="object_name">Object Name</string>
+    <string name="object_description">Object Description</string>
+    <string name="object_create">Create New Object</string>
+    <string name="object_resource">Resource</string>
+
+    <!--Stakeholder-->
+    <string name="stakeholder_name">Stakeholder Name</string>
+    <string name="stakeholder_description">Stakeholder Description</string>
+    <string name="stakeholder_create">Create New Stakeholder</string>
+
+    <!--Attribute-->
+    <string name="attribute_name">Attribute Name</string>
+    <string name="attribute_description">Attribute Description</string>
+    <string name="attribute_create">Create New Attribute</string>
+</resources>

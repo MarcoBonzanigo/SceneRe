@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/walkthrough_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/srePrimaryPastel"
+    tools:context=".activities.WalkthroughActivity">
+
+    <include
+        android:id="@+id/analytics_toolbar"
+        layout="@layout/sre_toolbar" />
+
+    <TextView
+        android:id="@+id/walkthrough_text_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/analytics_toolbar"
+        android:background="@color/srePrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/walkthrough_title"
+        android:textColor="@color/srePrimaryPastel" />
+
+    <include
+        android:id="@+id/walkthrough_holder"
+        layout="@layout/holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/walkthrough_text_label"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/walkthrough_layout_selection_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/walkthrough_text_label"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/walkthrough_layout_selection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/walkthrough_layout_selection_content"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/walkthrough_layout_selection_orientation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:weightSum="4" />
+
+        <LinearLayout
+            android:id="@+id/walkthrough_layout_selection_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/srePrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/walkthrough_text_selection_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dpi5"
+                android:layout_marginTop="@dimen/dpi2_5"
+                android:layout_marginRight="@dimen/dpi5"
+                android:layout_marginBottom="@dimen/dpi5"
+                android:background="@color/srePrimary"
+                android:textAlignment="center"
+                android:textColor="@color/srePrimaryPastel" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
